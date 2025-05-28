@@ -1,13 +1,28 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/+esm" type="module"></script>
+</head>
+<body>
+
+  <main id="app">
+    <!-- Contenido dinámico se renderiza aquí -->
+  </main>
+
+  <aside class="c-nav">
+    <button class="c-nav-item" onclick="cambiarCiudad('bogota')">Bogotá</button>
+    <button class="c-nav-item" onclick="cambiarCiudad('medellin')">Medellín</button>
+    <button class="c-nav-item" onclick="cambiarCiudad('cali')">Cali</button>
+    <button class="c-nav-item" onclick="cambiarCiudad('barranquilla')">Barranquilla</button>
+    <button class="c-nav-item" onclick="cambiarCiudad('cartagena')">Cartagena</button>
+  </aside>
+
+  <script type="module" src="main.js"></script>
+
+</body>
 </html>
